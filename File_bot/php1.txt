@@ -1,9 +1,9 @@
 <?php
 $API_KEY ='f_uQh7mtTRFqkVa308imLsl4N1xLlwbsMM_J48zvr9E';
-$Dev_id = "595759354893";
-$urlimg = "https://anos.store/Alkaber/1.jpeg";
-$as = [595759354893,595759354893];
-$update_info = "55330098";
+$Dev_id ="595759354893";
+$urlimg ="https://anos.store/Alkaber/1.jpeg";
+$as =[595759354893,595759354893];
+$update_info ="55330098";
 mkdir("information_");
 define('API_KEY',$API_KEY);
 function setWebhook($Link){
