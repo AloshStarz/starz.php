@@ -1,15 +1,10 @@
 <?php
-$API_KEY = 'f_uQh7mtTRFqkVa308imLsl4N1xLlwbsMM_J48zvr9E'
-';
+$API_KEY ='f_uQh7mtTRFqkVa308imLsl4N1xLlwbsMM_J48zvr9E';
 $Dev_id = "595759354893";
 $urlimg = "https://anos.store/Alkaber/1.jpeg";
 $as = [595759354893,595759354893];
 $update_info = "55330098";
-
 mkdir("information_");
-
-
-
 define('API_KEY',$API_KEY);
 function setWebhook($Link){
 $url = "https://botapi.tamtam.chat/subscriptions?access_token=".API_KEY;
@@ -27,7 +22,6 @@ curl_close($curl);
 return $resp;
 }
 echo setWebhook("https://".$_SERVER['SERVER_NAME']. "" . $_SERVER['SCRIPT_NAME']);
-
 $Adminset = json_decode(file_get_contents("information_/Ad".$update_info.".json"),true);
 $settings = json_decode(file_get_contents("information_/st".$update_info.".json"),true);
 $mute = json_decode(file_get_contents("information_/mute".$update_info.".json"),true);
